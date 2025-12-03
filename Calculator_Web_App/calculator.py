@@ -19,7 +19,7 @@ def calculate(num1, num2, operator):
             result = num1 * num2
         case "/" | "%":
             if num2 == 0:
-                st.success("Can't Divde by ZERO!!")
+                st.error("Can't Divde by ZERO!!")
                 return None
             else:
                 result = eval(str(num1)+operator+str(num2))
